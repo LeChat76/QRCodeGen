@@ -402,5 +402,3 @@ FodyWeavers.xsd
 # QRCodeGen project
 venv/
 db.sqlite3
-staticfiles/
-

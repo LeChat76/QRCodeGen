@@ -1,0 +1,80 @@
+/* Corps général de la page */
+html, body {
+    background-color: #f0f0f0; /* Couleur de fond gris clair */
+    height: 100vh; /* Utilise toute la hauteur de l'écran */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre le contenu verticalement */
+    align-items: center; /* Centre horizontalement */
+    overflow: hidden; /* Empêche le scroll */
+}
+
+/* En-tête fixe en haut */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centre le titre horizontalement */
+    position: fixed; /* Fixe l'en-tête en haut */
+    top: 0;
+    left: 0;
+    width: 100%; /* S'étend sur toute la largeur */
+    background-color: #FF0000; /* Rouge pour l'en-tête */
+    padding: 10px 15px; /* Padding ajusté */
+    color: white;
+    z-index: 1000; /* Toujours au-dessus des autres éléments */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre sous l'en-tête */
+    font-size: 1.5em; /* Taille ajustée */
+}
+
+.header img {
+    position: absolute;
+    left: 15px; /* Logo légèrement ajusté */
+    max-height: 50px;
+}
+
+.header-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+/* Conteneur principal */
+.content {
+    margin: 100px auto 70px auto; /* Ajustement pour l'en-tête et le pied de page */
+    width: 85%; /* Largeur ajustée */
+    max-width: 900px; /* Largeur maximale */
+    background-color: white; /* Fond blanc */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre pour donner de la profondeur */
+}
+
+/* Styles pour le tableau */
+table {
+    border-collapse: collapse;
+    margin: auto; /* Centrer le tableau */
+    width: 100%; /* Table prend toute la largeur disponible */
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    width: 300px; /* Colonnes élargies à 300px */
+    text-align: center;
+}
+
+/* Pied de page fixe en bas */
+.footer {
+    position: fixed; /* Fixe le pied de page en bas */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* S'étend sur toute la largeur */
+    background-color: #FF0000; /* Rouge pour le pied de page */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000; /* Toujours au-dessus des autres éléments */
+}
