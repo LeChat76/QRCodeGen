@@ -400,4 +400,7 @@ FodyWeavers.xsd
 *.sln.iml
 
 # QRCodeGen project
-venv
+venv/
+db.sqlite3
+staticfiles/
+
