@@ -1,1 +1,1 @@
-# QRCodeGen
+# An easy web site for a customer.... useless for you ;-)
