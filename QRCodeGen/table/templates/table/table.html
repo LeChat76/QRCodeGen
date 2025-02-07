@@ -1,0 +1,27 @@
+{% extends "table/base.html" %}
+
+{% block title %}Tableau{% endblock %}
+
+{% block content %}
+    <h2></h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Batiment</th>
+                <th>Process</th>
+                <th>CTA</th>
+                <th>Etage 1</th>
+                <th>Etage 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ col1 }}</td>
+                <td>{{ col2 }}</td>
+                <td>{{ col3 }}</td>
+                <td>{{ col4 }}</td>
+                <td>{{ col5 }}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
