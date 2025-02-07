@@ -12,6 +12,6 @@ def table_view(request, col1, col2, col3, col4, col5):
         'col4': col4,
         'col5': col5,
     }
-    return render(request, 'table/table.html', context)
+    return render(request, 'table.html', context)
 
 
