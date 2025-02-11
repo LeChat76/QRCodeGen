@@ -1,6 +1,6 @@
 /* Corps général de la page */
 html, body {
-    background-color: #f0f0f0; /* Couleur de fond gris clair */
+    background-color: #f0f0f0 !important;
     height: 100vh; /* Utilise toute la hauteur de l'écran */
     margin: 0;
     padding: 0;
@@ -13,6 +13,7 @@ html, body {
 
 /* En-tête fixe en haut */
 .header {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center; /* Centre le titre horizontalement */
@@ -26,6 +27,9 @@ html, body {
     z-index: 1000; /* Toujours au-dessus des autres éléments */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre sous l'en-tête */
     font-size: 1.5em; /* Taille ajustée */
+    border-bottom-left-radius: 20px;  /* Arrondi en bas à gauche */
+    border-bottom-right-radius: 20px; /* Arrondi en bas à droite */
+    overflow : hidden
 }
 
 .header img {
@@ -44,10 +48,10 @@ html, body {
 /* Conteneur principal */
 .content {
     margin: 100px auto 70px auto; /* Ajustement pour l'en-tête et le pied de page */
-    width: 85%; /* Largeur ajustée */
+    width: 100%; /* Largeur ajustée */
     max-width: 900px; /* Largeur maximale */
     background-color: white; /* Fond blanc */
-    padding: 20px;
+    padding: 0;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre pour donner de la profondeur */
 }
@@ -60,6 +64,14 @@ table {
     border-spacing: 0; /* Supprime les espaces entre les cellules */
     border-radius: 15px; /* Arrondi les bords */
     overflow: hidden; /* Masque tout débordement */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100vh; /* Prend toute la hauteur de l'écran */
+    background-color: #f0f0f0 !important; /* Fond gris */
 }
 
 th, td {
