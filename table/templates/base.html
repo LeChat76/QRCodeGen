@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!--<link rel="icon" href="{% static 'img/favicon.ico' %}">-->
+    <link rel="icon" href="{% static 'img/favicon.ico' %}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}QRCode Gen{% endblock %}</title>
@@ -11,9 +11,10 @@
 <body>
     <!-- Header -->
     <div class="header">
-        <img src="{% static 'img/logo.png' %}" alt="Logo AAF">
+        <img class="logo" src="{% static 'img/logo.png' %}" alt="Logo AAF">
         <div class="header-title">QRCode Gen</div>
     </div>
+    
 
     <!-- Contenu principal -->
     <div class="content">

@@ -54,9 +54,12 @@ html, body {
 
 /* Styles pour le tableau */
 table {
-    border-collapse: collapse;
+    border-collapse: separate;
     margin: auto; /* Centrer le tableau */
     width: 100%; /* Table prend toute la largeur disponible */
+    border-spacing: 0; /* Supprime les espaces entre les cellules */
+    border-radius: 15px; /* Arrondi les bords */
+    overflow: hidden; /* Masque tout débordement */
 }
 
 th, td {
@@ -77,4 +80,11 @@ th, td {
     text-align: center;
     padding: 10px 0;
     z-index: 1000; /* Toujours au-dessus des autres éléments */
+    border-top-left-radius: 20px;  /* Arrondi en haut à gauche */
+    border-top-right-radius: 20px; /* Arrondi en haut à droite */
+}
+
+.logo {
+    width: 20vw; /* 20% de la largeur de l’écran */
+    max-width: 100px; /* Ne dépasse pas 100px */
 }
