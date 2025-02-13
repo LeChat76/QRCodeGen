@@ -20,6 +20,7 @@ html, body {
     position: fixed; /* Fixe l'en-tête en haut */
     top: 0;
     left: 0;
+    height: 70px;
     width: 100%; /* S'étend sur toute la largeur */
     background-color: #FF0000; /* Rouge pour l'en-tête */
     padding: 10px 15px; /* Padding ajusté */
@@ -49,7 +50,7 @@ html, body {
 table {
     border-collapse: separate;
     margin: auto; /* Centrer le tableau */
-    width: 100%; /* Table prend toute la largeur disponible */
+    width: 98%; /* Table prend toute la largeur disponible */
     overflow: hidden; /* Masque tout débordement */
     box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.3);
 }
@@ -57,9 +58,7 @@ table {
     display: flex;
     justify-content: center; /* Centre horizontalement */
     align-items: center; /* Centre verticalement */
-    /* height: 100vh; /* Prend toute la hauteur de l'écran */
     background-color: #f0f0f0 !important; /* Fond gris */
-    /* padding-top: 80px; */
 }
 
 /* Styles communs aux th et td */
@@ -72,6 +71,7 @@ th, td {
 
 /* Fond spécifique pour les en-têtes */
 th {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre légère */
     background-color: lightgray;
     font-size: 22px;
 }
