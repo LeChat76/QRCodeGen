@@ -9,18 +9,12 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <!-- Header -->
     <div class="header">
         <img class="logo" src="{% static 'img/logo.png' %}" alt="Logo AAF">
         <div class="header-title">QRCode Gen</div>
     </div>
-    
-    <!-- Contenu principal -->
-
-        {% block content %}
-        {% endblock %}
-
-    <!-- Footer -->
+    {% block content %}
+    {% endblock %}
     <div class="footer">
         © 2025 AAF International - Tous droits réservés
     </div>

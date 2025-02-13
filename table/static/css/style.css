@@ -8,7 +8,7 @@ html, body {
     flex-direction: column;
     justify-content: center; /* Centre le contenu verticalement */
     align-items: center; /* Centre horizontalement */
-    overflow: hidden; /* Empêche le scroll */
+    overflow: auto; /* Empêche le scroll */
 }
 
 /* En-tête fixe en haut */
@@ -29,7 +29,7 @@ html, body {
     font-size: 1.5em; /* Taille ajustée */
     border-bottom-left-radius: 20px;  /* Arrondi en bas à gauche */
     border-bottom-right-radius: 20px; /* Arrondi en bas à droite */
-    overflow : hidden
+    overflow: hidden;
 }
 
 .header img {
@@ -50,25 +50,38 @@ table {
     border-collapse: separate;
     margin: auto; /* Centrer le tableau */
     width: 100%; /* Table prend toute la largeur disponible */
-    border-spacing: 0; /* Supprime les espaces entre les cellules */
-    border-radius: 15px; /* Arrondi les bords */
+    /* border-spacing: 0; /* Supprime les espaces entre les cellules */
+    border-radius: 6px; /* Arrondi les bords */
     overflow: hidden; /* Masque tout débordement */
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
 }
-
 .container {
     display: flex;
     justify-content: center; /* Centre horizontalement */
     align-items: center; /* Centre verticalement */
-    height: 100vh; /* Prend toute la hauteur de l'écran */
+    /* height: 100vh; /* Prend toute la hauteur de l'écran */
     background-color: #f0f0f0 !important; /* Fond gris */
+    /* padding-top: 80px; */
 }
 
+/* Styles communs aux th et td */
 th, td {
     border: 1px solid black;
-    padding: 10px;
-    width: 300px; /* Colonnes élargies à 300px */
+    padding: 8px;
+    width: 300px;
     text-align: center;
+}
+
+/* Fond spécifique pour les en-têtes */
+th {
+    background-color: lightgray;
+    font-size: 22px;
+}
+
+/* Fond spécifique pour les cellules */
+td {
     background-color: white;
+    font-size: 18px;
 }
 
 /* Pied de page fixe en bas */
