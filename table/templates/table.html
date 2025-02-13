@@ -3,26 +3,53 @@
 {% block title %}Tableau{% endblock %}
 
 {% block content %}
-<div class="container">
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Batiment</th>
-                <th>Process</th>
-                <th>CTA</th>
-                <th>Etage 1</th>
-                <th>Etage 2</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>{{ col1 }}</td>
-                <td>{{ col2 }}</td>
-                <td>{{ col3 }}</td>
-                <td>{{ col4 }}</td>
-                <td>{{ col5 }}</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+        <div class="container">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Batiment</th>
+                        <th>Process</th>
+                        <th>CTA</th>
+                        <th>Etage 1</th>
+                        <th>Etage 2</th>
+                        <th>Etage 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- Colonnes fusionnées sur 5 lignes -->
+                        <td rowspan="5">{{ col1 }}</td>
+                        <td rowspan="5">{{ col2 }}</td>
+                        <td rowspan="5">{{ col3 }}</td>
+                        
+                        <!-- Colonne Etage 1 -->
+                        <td>
+                            <ul>
+                                {% for item in etage_1_values %}
+                                    <li>{{ item }}</li>
+                                {% endfor %}
+                            </ul>
+                        </td>
+            
+                        <!-- Colonne Etage 2 -->
+                        <td>
+                            <ul>
+                                {% for item in etage_2_values %}
+                                    <li>{{ item }}</li>
+                                {% endfor %}
+                            </ul>
+                        </td>
+            
+                        <!-- Colonne Etage 3 -->
+                        <td>
+                            <ul>
+                                {% for item in etage_3_values %}
+                                    <li>{{ item }}</li>
+                                {% endfor %}
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 {% endblock %}

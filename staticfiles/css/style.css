@@ -3,7 +3,7 @@ html, body {
     background-color: #f0f0f0 !important;
     height: 100vh; /* Utilise toute la hauteur de l'écran */
     margin: 0;
-    padding: 0;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centre le contenu verticalement */
@@ -43,17 +43,6 @@ html, body {
     font-weight: bold;
     text-align: center;
     margin: 0;
-}
-
-/* Conteneur principal */
-.content {
-    margin: 100px auto 70px auto; /* Ajustement pour l'en-tête et le pied de page */
-    width: 100%; /* Largeur ajustée */
-    max-width: 900px; /* Largeur maximale */
-    background-color: white; /* Fond blanc */
-    padding: 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre pour donner de la profondeur */
 }
 
 /* Styles pour le tableau */
@@ -100,4 +89,15 @@ th, td {
 .logo {
     width: 20vw; /* 20% de la largeur de l’écran */
     max-width: 100px; /* Ne dépasse pas 100px */
+}
+
+td ul {
+    list-style-position: inside; /* Déplace la puce à l'intérieur du bloc */
+    padding-left: 0; /* Enlève l'espace à gauche */
+    margin: 0; /* Supprime les marges pour éviter les décalages */
+    text-align: left; /* Assure un alignement à gauche */
+}
+
+td ul li {
+    margin-bottom: 5px; /* Ajoute un peu d'espace entre les éléments */
 }
