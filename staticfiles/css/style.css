@@ -5,7 +5,7 @@ html, body {
     margin: 0;
     padding: 10px;
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;
     justify-content: center; /* Centre le contenu verticalement */
     align-items: center; /* Centre horizontalement */
     overflow: auto; /* Empêche le scroll */
