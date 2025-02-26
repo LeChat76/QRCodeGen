@@ -5,8 +5,6 @@ html, body {
     margin: 0;
     padding: 10px;
     display: flex;
-    /*flex-direction: column;
-    justify-content: center; /* Centre le contenu verticalement */
     align-items: center; /* Centre horizontalement */
     overflow: auto; /* Empêche le scroll */
 }
@@ -48,10 +46,14 @@ html, body {
 
 /* Styles pour le tableau */
 table {
+    table-layout: fixed;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
     border-collapse: separate;
-    margin: auto; /* Centrer le tableau */
-    width: 98%; /* Table prend toute la largeur disponible */
-    overflow: hidden; /* Masque tout débordement */
+    margin: auto;
+    width: 100%; 
+    overflow: hidden;
     box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.3);
 }
 .container {
